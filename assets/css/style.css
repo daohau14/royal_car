@@ -19,6 +19,7 @@ li {
 }
 a {
     text-decoration: none;
+    color: #fff;
 }
 /* top header */
 .header__top-header {
@@ -127,7 +128,45 @@ a {
     z-index: 1;
 }
 /* end header nav bar */
+/* header mobile */
+.header-mobile {
+    display: none;
+}
+.icon {
+    font-size: 32px;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.header-mobile-menu {
+    width: 100%;
+    background-color: var(--secondary);
+    display: none;
+    right: 0;
+    /* top: 0; */
+    position: absolute;
+    padding:27px 54px;
+    z-index: 1;
+}
+.header-mobile-menu li {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 24px;
 
+}
+.header-mobile-menu i {
+    margin-right: 10px;
+}
+.subnav-car, .subnav-page {
+    display: none;
+}
+.header-mobile-menu li :hover {
+    color: var(--primary);
+}
+.header-mobile-menu li div {
+    color: #fff;
+    cursor: pointer;
+}
 .header__search-container {
     width: calc(100% - 108px);
     height: 92px;
@@ -193,7 +232,8 @@ a {
     top: 25%;
     margin: 0 auto;
     color: #fff;
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
     padding: 18px;
     text-align: center;
 }
@@ -248,11 +288,18 @@ a {
 .about-title > h3> span {
     color: var(--primary);
 }
+
 .about-img {
-    margin-bottom: 27px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 27px;
+}
+.about-car-img {
+    width: 100%;
 }
 .about-description {
-    width: 920px;
+    max-width: 920px;
+    width: 100%;
     margin: 0 auto;
     font-size: 18px;
     font-family: Rubik;
@@ -887,6 +934,10 @@ span.swiper-pagination-bullet {
     display: flex;
     color: #fff;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-top__item {
+    width: 25%;
 }
 .footer-bot {
     height: 117px;
@@ -956,19 +1007,25 @@ span.swiper-pagination-bullet {
     width: 100%;
     
 }
-.gallery-list {
+/* .gallery-list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 440px;
+    max-width: 350px;
+} */
+.gallery-top,.gallery-bot {
+    display: flex;
+    width: 100%;
 }
 .gallery-item {
-    margin-right: 6px;
+    margin-right: 9px;
     margin-bottom: 9px;
     cursor: pointer;
 }
 .gallery-car-img{
-    width: 104px;
-    height: 104px;
+    max-width: 104px;
+    width: 100%;
+    height: 100%;
+    max-height: 104px;
 }
 .footer-top__newsletter {
     max-width: 485px;

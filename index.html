@@ -66,6 +66,30 @@
                     </li>
                     <li><a href="contact.html">contact</a></li>
                 </ul>
+                <div class="header-mobile">
+                    <div  class="icon" onclick= "togge_menu()">
+                      <i class="fa fa-bars"></i>
+                    </div>
+                        <ul class="header-mobile-menu">
+                            <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                            <li><a href="about.html"><i class="fa-regular fa-address-card"></i>about</a></li>
+                            <li><a href="service.html"><i class="fa-solid fa-handshake"></i>service</a></li>
+                            <li><div onclick="togge_car()"><i class="fa-solid fa-car-side"></i>Cars</div>
+                                <ul class="subnav-car">
+                                    <li><a href="car-listing.html"><i class="fa-regular fa-rectangle-list"></i>Car Listing</a></li>
+                                    <li><a href="car-detail.html"><i class="fa-solid fa-circle-info"></i>Car Detail</a></li>
+                                    <li><a href="car-booking.html"><i class="fa-solid fa-money-check-dollar"></i>Car Booking</a></li>
+                                </ul>
+                            </li>
+                            <li ><div onclick="togge_page()"><i class="fa-solid fa-pager"></i>Pages</div>
+                                <ul class="subnav-page">
+                                    <li><a href="team.html"><i class="fa-solid fa-users-gear"></i>The Team</a></li>
+                                    <li><a href="testimonial.html"><i class="fa-solid fa-comments"></i>Testimonial</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html"><i class="fa-solid fa-address-book"></i>contact</a></li>
+                        </ul>
+                    </div>
             </div>
             <!-- end header menu -->
             <!-- header search -->
@@ -833,79 +857,89 @@
         <footer class="footer">
             <div class="footer-top">
                 <div class="footer-top__container">
-                    <div class="footer-top__contact">
-                        <div class="footer-title">
-                            <h4>GET IN TOUCH</h4>
-                        </div>
-                        <ul class="footer-contact__description">
-                            <li><a href=""><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</a></li>
-                            <li><a href="tel:+01234567890"><i class="fa-solid fa-phone"></i> +012 3456 7890</a></li>
-                            <li><a href="mailto:info@example.com"><i class="fa-solid fa-envelope"></i> info@example.com</a></li>
-                        </ul>
-                        <div class="footer-top__socials">
-                            <div class="footer-title__socials">
-                                <h6>FOLLOW US</h6>
+                    <div class="footer-top__item">
+                        <div class="footer-top__contact">
+                            <div class="footer-title">
+                                <h4>GET IN TOUCH</h4>
                             </div>
-                            <div class="footer-top__social-icon">
-                                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-top__nav-links">
-                        <div class="footer-title">
-                            <h4>USEFULL LINKS</h4>
-                        </div>
-                        <ul class="nav-link">
-                            <li><a href=""><i class="fa-solid fa-angle-right"></i>  Private Policy</a></li>
-                            <li><a href=""><i class="fa-solid fa-angle-right"></i>  Term & Conditions</a></li>
-                            <li><a href=""><i class="fa-solid fa-angle-right"></i>  New Member Registration</a></li>
-                            <li><a href=""><i class="fa-solid fa-angle-right"></i>  Affiliate Programme</a></li>
-                            <li><a href=""><i class="fa-solid fa-angle-right"></i>  Return & Refund</a></li>
-                            <li><a href=""><i class="fa-solid fa-angle-right"></i>  Help & FQAs</a></li>
-                            
-                        </ul>
-                    </div>
-                    <div class="footer-top__car-gallery">
-                        <div class="footer-title">
-                            <h4>CAR GALLERY</h4>
-                        </div>
-                        <div class="gallery-container">
-                            <div class="gallery-list">
-                                <div class="gallery-item">
-                                    <img src="./assets/img/gallery-1.jpg" alt="gallery-car" class="gallery-car-img">
+                            <ul class="footer-contact__description">
+                                <li><a href=""><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</a></li>
+                                <li><a href="tel:+01234567890"><i class="fa-solid fa-phone"></i> +012 3456 7890</a></li>
+                                <li><a href="mailto:info@example.com"><i class="fa-solid fa-envelope"></i> info@example.com</a></li>
+                            </ul>
+                            <div class="footer-top__socials">
+                                <div class="footer-title__socials">
+                                    <h6>FOLLOW US</h6>
                                 </div>
-                                <div class="gallery-item">
-                                    <img src="./assets/img/gallery-2.jpg" alt="gallery-car" class="gallery-car-img">
-                                </div>
-                                <div class="gallery-item">
-                                    <img src="./assets/img/gallery-3.jpg" alt="gallery-car" class="gallery-car-img">
-                                </div>
-                                <div class="gallery-item">
-                                    <img src="./assets/img/gallery-4.jpg" alt="gallery-car" class="gallery-car-img">
-                                </div>
-                                <div class="gallery-item">
-                                    <img src="./assets/img/gallery-5.jpg" alt="gallery-car" class="gallery-car-img">
-                                </div>
-                                <div class="gallery-item">
-                                    <img src="./assets/img/gallery-6.jpg" alt="gallery-car" class="gallery-car-img">
+                                <div class="footer-top__social-icon">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="footer-top__newsletter">
-                        <div class="footer-title">
-                            <h4>NEWSLETTER</h4>
-                        </div>
-                        <div class="footer-newletter__description">
-                            <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
-                            <div class="input-group">
-                                <input type="text" class="input-letter" placeholder=" Your Email">
-                                <button class="btn-email">SIGN UP</button>
+                    <div class="footer-top__item">
+                        <div class="footer-top__nav-links">
+                            <div class="footer-title">
+                                <h4>USEFULL LINKS</h4>
                             </div>
-                            <span>Lorem sit sed elitr sed kasd et</span>
+                            <ul class="nav-link">
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>  Private Policy</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>  Term & Conditions</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>  New Member Registration</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>  Affiliate Programme</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>  Return & Refund</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>  Help & FQAs</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-top__item">
+                        <div class="footer-top__car-gallery">
+                            <div class="footer-title">
+                                <h4>CAR GALLERY</h4>
+                            </div>
+                            <div class="gallery-container">
+                                <div class="gallery-top">
+                                    <div class="gallery-item">
+                                        <img src="./assets/img/gallery-1.jpg" alt="gallery-car" class="gallery-car-img">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="./assets/img/gallery-2.jpg" alt="gallery-car" class="gallery-car-img">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="./assets/img/gallery-3.jpg" alt="gallery-car" class="gallery-car-img">
+                                    </div>
+                                </div>
+                                <div class="gallery-bot">
+                                    <div class="gallery-item">
+                                        <img src="./assets/img/gallery-4.jpg" alt="gallery-car" class="gallery-car-img">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="./assets/img/gallery-5.jpg" alt="gallery-car" class="gallery-car-img">
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="./assets/img/gallery-6.jpg" alt="gallery-car" class="gallery-car-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-top__item">
+                        <div class="footer-top__newsletter">
+                            <div class="footer-title">
+                                <h4>NEWSLETTER</h4>
+                            </div>
+                            <div class="footer-newletter__description">
+                                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                                <div class="input-group">
+                                    <input type="text" class="input-letter" placeholder=" Your Email">
+                                    <button class="btn-email">SIGN UP</button>
+                                </div>
+                                <span>Lorem sit sed elitr sed kasd et</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -918,163 +952,163 @@
             </div>
         </footer>
         <!-- end footer -->
-    <script src="./assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <!-- Testimonial carousel -->
-    <script>
-        var swiper_testimonial = new Swiper(".testimonial-carousel.mySwiper", {
+        <script src="./assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <!-- Testimonial carousel -->
+        <script>
+            var swiper_testimonial = new Swiper(".testimonial-carousel.mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+            //     autoplay: {
+            //     delay: 2000,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".testimonial__slider-change.swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                },
+                425: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                },
+                480: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                },
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+                },
+                1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                },
+            },
+            });
+        </script>
+        <!-- end testimonial carousel -->
+        <!-- vendor carousel -->
+        <script>
+            var swiper_vendor = new Swiper(".vendor-carousel.mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 3,
+                autoplay: {
+                delay: 2000,
+                loop: true,
+            },
+            pagination: {
+                el: "vendor__slider-change.swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                loop: true,
+                },
+                425: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                loop: true,
+                },
+                480: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                loop: true,
+                },
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                loop: true,
+                },
+                768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                slidesPerGroup: 1,
+                loop: true,
+                },
+                1024: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                loop: true,
+                },
+                1025: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                loop: true,
+                },
+            },
+            });
+        </script>
+        <!-- end vendor carousel -->
+        <!--team slider -->
+        <script>
+            var teamSlider = new Swiper(".team-carousel.mySwiper", {
             slidesPerView: 3,
             spaceBetween: 30,
-            slidesPerGroup: 1,
-        //     autoplay: {
-        //     delay: 2000,
-        //     disableOnInteraction: false,
-        // },
-          pagination: {
-            el: ".testimonial__slider-change.swiper-pagination",
-            clickable: true,
-          },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-            },
-            425: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-            },
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-            },
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-          },
-        });
-    </script>
-    <!-- end testimonial carousel -->
-    <!-- vendor carousel -->
-    <script>
-        var swiper_vendor = new Swiper(".vendor-carousel.mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 20,
             slidesPerGroup: 3,
             autoplay: {
-            delay: 2000,
+                delay: 2500,
+            },
             loop: true,
-        },
-          pagination: {
-            el: "vendor__slider-change.swiper-pagination",
-            clickable: true,
-          },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-              loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            425: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-              loop: true,
+            breakpoints: {
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                },
+                425: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                },
+                480: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                },
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                slidesPerGroup: 1,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+                },
+                1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                slidesPerGroup: 1,
+                },
             },
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-              loop: true,
-            },
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-              loop: true,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-              slidesPerGroup: 1,
-              loop: true,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 10,
-              slidesPerGroup: 1,
-              loop: true,
-            },
-            1025: {
-              slidesPerView: 5,
-              spaceBetween: 10,
-              slidesPerGroup: 1,
-              loop: true,
-            },
-          },
-        });
-    </script>
-    <!-- end vendor carousel -->
-    <!--team slider -->
-    <script>
-        var teamSlider = new Swiper(".team-carousel.mySwiper", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          autoplay: {
-            delay: 2500,
-        },
-        loop: true,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-            },
-            425: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-            },
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-            },
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-              slidesPerGroup: 1,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-              slidesPerGroup: 1,
-            },
-          },
-        });
-    </script>
-    <!-- end team slider -->
+            });
+        </script>
+        <!-- end team slider -->
 </body>
 </html>
