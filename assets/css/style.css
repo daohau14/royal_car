@@ -1007,11 +1007,6 @@ span.swiper-pagination-bullet {
     width: 100%;
     
 }
-/* .gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 350px;
-} */
 .gallery-top,.gallery-bot {
     display: flex;
     width: 100%;
