@@ -159,6 +159,7 @@ a {
 }
 .subnav-car, .subnav-page {
     display: none;
+    margin-left: 20px;
 }
 .header-mobile-menu li :hover {
     color: var(--primary);

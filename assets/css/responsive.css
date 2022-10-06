@@ -57,6 +57,17 @@
         margin: 0;
     }
 }
+@media screen and (max-width: 1024px) {
+    .select-custom {
+        margin-bottom: 18px;
+        width: 287px;
+        margin-left: 0px;
+    }
+    .btn-search {
+        margin-left: 0;
+    }
+
+}
 @media screen and (max-width: 940px) {
     .header__top-header,.header__menu,
     .header-mobile-menu {
@@ -180,6 +191,9 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .page-header__title> h2 {
+        font-size: 48px;
+    }
     .search-select {
         width: 100%;
     }
@@ -341,6 +355,9 @@
     }
 }
 @media screen and (max-width: 321px) {
+    .header__logo {
+        font-size: 18px;
+    }
     .banner-left, .banner-right {
         display: block;
     }
@@ -387,5 +404,34 @@
     }
     .logo-car {
         padding: 48px;
+    }
+    .slider__carousel-item {
+        top: 0;
+    }
+    .slider__carousel-item h2,
+    .slider {
+        margin: 0;
+    }
+    .btn.btn.btn-reserve {
+        width: 60%;
+    }
+    .about,.services,.banner,.team,.banner-2,.testimonial,
+    .contact,.vendor {
+        margin: 50px 0;
+    }
+    .item-title{
+        margin: -55px 0 0 42%;
+    }
+    .item.item-midle >.item-title {
+        margin-top: -55px;
+    }
+    .row-content__item {
+        margin-bottom: 0;
+    }
+    .product-category {
+        margin: 0%;
+    }
+    .banner-title >h2 {
+        font-size: 54px;
     }
 }
