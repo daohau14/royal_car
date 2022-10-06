@@ -827,9 +827,12 @@ span.swiper-pagination-bullet {
 }
 .contact-form_top{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin-bottom: 18px;
     
+}
+.emty-span {
+    margin: 0 10px;
 }
 .form-control {
     max-width: 272px;
@@ -1128,11 +1131,12 @@ span.swiper-pagination-bullet {
     width: 100%;
     max-width: 1110px;
     margin: 0 auto;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 54px;
 }
 .detail-description {
-    width: 730px;
+    width: 100%;
+    max-width: 730px;
 }
 .detail-title >h2 {
     font-size: 63px;
@@ -1143,10 +1147,12 @@ span.swiper-pagination-bullet {
     margin-bottom: 18px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .detail-img {
-    width: 169px;
-    height: 169px;
+    width: 23%;
+    max-width: 169px;
+    /* height: 169px; */
 }
 .detail-text p {
     margin-bottom: 27px;
@@ -1159,8 +1165,7 @@ span.swiper-pagination-bullet {
     display: flex;
     justify-content: space-between;
     margin-bottom: 18px;
-}
-.detail-item {
+    flex-wrap: wrap;
 }
 .detail-item span {
     font-size: 18px;
@@ -1172,10 +1177,12 @@ span.swiper-pagination-bullet {
   color: var(--primary);
 }
 .detail-group {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 575px;
     background-color: var(--secondary);
     padding: 54px;
+    margin-left: 27px;
 }
 .detail-group__title {
     color: var(--primary);
@@ -1208,6 +1215,11 @@ span.swiper-pagination-bullet {
     width: 100%;
     max-width: 1110px;
     margin: 0 auto 215px;
+}
+h2.detail-slider__title {
+    font-size: 36px;
+    margin-bottom: 27px;
+    color: var(--secondary);
 }
 .detail-container__slider {
     width: 100%;
@@ -1313,8 +1325,8 @@ span.swiper-pagination-bullet {
     margin-bottom: 18px;
     margin-right: 12px;
 }
-.person__form-group {
-    width: 100%;
+.person__form-group,.booking__form-group {
+    flex-wrap: wrap;
 }
 .select-input {
     max-width: 350px;

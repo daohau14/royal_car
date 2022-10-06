@@ -36,10 +36,11 @@
         margin: 9px 0;
     }
     .banner-container,
-    .vendor-carousel {
+    .vendor-carousel,.detail-container,
+    .detail-slider,.booking-payment,.booking-wrap {
         width: calc(100% - 108px);
     }
-    .team-carousel {
+    .team-carousel,.detail-container__slider {
         width: calc(100% - 30px);
     }
     .banner-2__container {
@@ -53,8 +54,17 @@
     .footer-top__item {
         width: 25%
     }
-    .footer-top__social-icon i {
+    .footer-top__social-icon i,.detail-item i {
         margin: 0;
+    }
+    .booking-wrap-img {
+        margin-right: 27px;
+    }
+    .form-input,.select-input {
+        width: 45%;
+    }
+    .input-request {
+        width: calc(100% - 40px);
     }
 }
 @media screen and (max-width: 1024px) {
@@ -189,6 +199,47 @@
         width: 50%;
         margin-bottom: 54px;
     }
+    .detail-container {
+        display: block;
+    }
+    .detail-group,.booking-payment-right {
+        margin: 54px 0;
+        max-width: 100%;
+    }
+    .detail {
+        padding: 0;
+    }
+    .detail-slider {
+        margin-bottom: 108px;
+    }
+    .vendor {
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    .booking-wrap__container-row,.booking-payment {
+        display: block;
+        margin: 0 auto;
+    }
+    .booking-wrap-img {
+        max-width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .booking-wrap__description {
+        width: 100%;
+    }
+    .booking-wrap__socials {
+        margin-bottom: 27px;
+    }
+    .form-input, .select-input {
+        width: 47%;
+    }
+    .booking__booking-detail {
+        margin-bottom: 27px;
+    }
+    .input-request {
+        width: calc(100% - 24px);
+    }
 }
 @media screen and (max-width: 600px) {
     .page-header__title> h2 {
@@ -214,8 +265,6 @@
     .title-heading h3 {
         width: 100%;
         font-size: 45px;
-    }
-    .item {
     }
     .item-title {
         width: 100%;
@@ -256,7 +305,8 @@
     .banner-container, .vendor-carousel,
     .product-list, .team-slider,.banner-2__container,
     .contact-item,
-    .testimonial-carousel {
+    .testimonial-carousel,.detail-container,
+    .detail-slider, .booking-wrap, .booking-payment {
         width: calc(100% - 54px);
         margin: 0 auto;
     }
@@ -266,7 +316,9 @@
     .title-heading h3 {
         font-size: 32px;
     }
-    .title-heading h2{
+    .title-heading h2,
+    .detail-title >h2,
+    .booking-wrap__title{
         font-size: 48px;
     }
     .slider__carousel-item h3 {
@@ -320,6 +372,18 @@
         max-width: 100%;
         max-height: 100%;
     }
+    .detail-img {
+        width: 50%;
+        margin-bottom: 28px;
+        max-width: 200px;
+    }
+    .detail-item {
+        width: 42%;
+    }
+    .form-input,.select-input, .input-request {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 426px) {
     .slider__carousel-item {
@@ -328,7 +392,7 @@
     .btn.btn.btn-reserve {
         width: 45%;
     }
-    .slider__carousel-item h2 {
+    .slider__carousel-item h2,.detail-group__title {
         font-size: 24px;
     }
     .item-title {
@@ -352,6 +416,15 @@
     }
     .footer-bot {
         padding: 27px;
+    }
+    .detail-title >h2 {
+        font-size: 40px;
+    }
+    .detail-img {
+        width: 46%;
+    }
+    .detail-item {
+        width: 50%;
     }
 }
 @media screen and (max-width: 321px) {
@@ -433,5 +506,8 @@
     }
     .banner-title >h2 {
         font-size: 54px;
+    }
+    .booking-wrap__title {
+        font-size: 32px;
     }
 }
